@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: #111;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            transition: background 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #444;
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Projects Section with Hover Effect */
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project-item {
+            background-color: #222;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+            background-color: #444;
+        }
+
+        .project-item h3 {
+            font-size: 1.8rem;
+        }
+
+        /* Certificates Section */
+        .certificates {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .certificate-item {
+            background-color: #222;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .certificate-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .certificate-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .certificate-item h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+        }
+
+        /* Contact Form */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #333;
+            border: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #444;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #666;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hello, I am Balakrishnan J, a B.Tech student and a web developer with experience in building high-quality websites and web applications. My expertise includes front-end and back-end development, with a passion for creating user-friendly, responsive designs.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <div class="project-item">
+                <h3>Drone-based ET Sensing</h3>
+                <p>The drone-based ET sensing system optimizes irrigation by using drones with advanced sensors, AI, and satellite data to estimate crop water needs and Actual Evapotranspiration (AET).</p>
+            </div>
+            <div class="project-item">
+                <h3>Ethical Hacking Project using Burpsuite</h3>
+                <p>This project uses Burp Suite to identify and mitigate vulnerabilities in a web application, focusing on credential harvesting risks.</p>
+            </div>
+            <div class="project-item">
+                <h3>Interactive Website</h3>
+                <p>This project involved creating a beautiful, interactive website with responsive elements, smooth navigation, and dynamic content using modern technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h1>My Certificates</h1>
+        <div class="certificates">
+            <div class="certificate-item">
+                <img src="/project 2/correct.jpg" alt="Certificate 1">
+                <h3>Cyber security Training certificate</h3>
+            </div>
+            <div class="certificate-item">
+                <img src="/project 2/correct2.jpg" alt="Certificate 2">
+                <h3>Communication Workshop Certificate</h3>
+            </div>
+            <div class="certificate-item">
+                <img src="/project 2/correct3.jpg" alt="Certificate 3">
+                <h3>3d Modeling workshop certificate </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Balakrishnan J . All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
